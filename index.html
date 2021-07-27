@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | [Blogr]</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+      <div class="header">
+          <div class="header-container">
+              <nav class="nav">
+                  <div class="nav-header">
+                    <div class="nav__logo">
+                      <img src="./images/logo.svg" alt="nav-logo">
+                    </div>
+                  </div>
+                  <div class="nav__list">
+                    <div class="nav__list-gp" style="display: flex;">
+                      <div class="nav__dropdown" id="nav-item-1" onclick="nav1Fun()">
+                        <span class="nav-name">Product</span>
+                          <ul class="nav__dropdown-menu" id="nav__dropdown-1">
+                            <li class="nav__dropdown-item">Overview</li>
+                            <li class="nav__dropdown-item">Pricing</li>
+                            <li class="nav__dropdown-item">Marketplace</li>
+                            <li class="nav__dropdown-item">Features</li>
+                            <li class="nav__dropdown-item">Integrations</li>
+                          </ul>
+                      </div>
+                      <div class="nav__dropdown" id="nav-item-2" onclick="nav2Fun()">
+                        <span class="nav-name">Company</span>
+                          <ul class="nav__dropdown-menu" id="nav__dropdown-2">
+                            <li class="nav__dropdown-item">About</li>
+                            <li class="nav__dropdown-item">Team</li>
+                            <li class="nav__dropdown-item">Blog</li>
+                            <li class="nav__dropdown-item">Careers</li>
+                          </ul>
+                      </div>
+                      <div class="nav__dropdown" id="nav-item-3" onclick="nav3Fun()">
+                        <span class="nav-name">Connect</span>
+                          <ul class="nav__dropdown-menu" id="nav__dropdown-3">
+                            <li class="nav__dropdown-item">Content</li>
+                            <li class="nav__dropdown-item">Newsletter</li>
+                            <li class="nav__dropdown-item">LinkedIn</li>
+                          </ul>
+                      </div>
+                    </div>
+                    <div class="nav__btn-gp">
+                        <a href="#" class="btn-none">Log In</a>
+                        <a href="#" class="btn">Sign Up</a>
+                    </div>
+                  </div>
+                  <div class="btn-close mobile-show">
+                      <img src="./images/icon-hamburger.svg" alt="more.." class="btn-img-close">
+                  </div>
+              </nav>
+              <div class="header-body">
+                <div class="header-body-container">
+                  <div class="header-body-title">
+                     <h1>
+                          A modern publishing platform
+                     </h1>
+                      <p>Grow your audience and build your online brand</p>
+                  </div>
+                  <div class="header-body-btn">
+                      <a href="#" class="btn">Start For Free</a>
+                      <a href="#" class="btn-outline">Learn More</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+  </header>
+  <section id="design">
+      <div class="design-section">
+          <h1>Design for the future</h1>
+          <img src="./images/illustration-editor-mobile.svg" alt="illustration-editor-mobile" class="mobile-show">
+            <div class="design-text-side">
+              <div class="text-container">
+                <h3>
+                    Introducing an extensible editor
+                </h3>
+                <p>
+                  Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or change the looks of a blog.
+                </p>
+              </div>
+              <div class="text-container">
+                <h3>
+                      Robust content management
+                </h3>
+                <p>
+                  Flexible content management enables users to easily move through posts. Increase the usability of your blog by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+                </p>
+              </div>
+            </div>
+      </div>
+  </section>
+
+  <section id="phone">
+    <div class="phone-section">
+        <div class="phone-side">
+          <img src="./images/illustration-phones.svg" alt="phone">
+        </div>
+        <div class="phone-text-side">
+          <h1>
+              State of the Art Infrastructure
+          </h1>
+          <p>
+             With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+          </p>
+        </div>
+    </div>
+  </section>
+
+    <section id="free">
+      <div class="free-section">
+        <img src="./images/illustration-laptop-mobile.svg" alt="illustration-laptop" class="mobile-show">
+            <div class="free-text-side">
+              <div class="text-container">
+                <h3>
+                      Free, open, simple
+                </h3>
+                <p>
+                  Blogr is a free and open source application backed by a large community of helpful developers. It supports features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools,   and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+                </p>
+              </div>
+              <div class="text-container">
+                <h3>
+                  Powerful tooling
+                </h3>
+                <p>
+                   Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, butcapable of producing even the most complicated sites.                
+                </p>
+              </div>
+            </div>
+      </div>
+  </section>
+
+  <footer id="footer">
+    <div class="footer-section">
+        <div class="footer-container">
+            <img src="./images/logo.svg" alt="This is Logo">
+            <div class="footer-list">
+                <span class="footer-list-title">Product</span>
+                <ul>
+                  <li>Overview</li>
+                  <li>Pricing</li>
+                  <li>Marketplace</li>
+                  <li>Features</li>
+                  <li>Integrations</li>
+                </ul>
+            </div>
+            <div class="footer-list">
+              <span class="footer-list-title">Company</span>
+                <ul>
+                  <li>About</li>
+                  <li>Team</li>
+                  <li>Blog</li>
+                  <li>Careers</li>
+                </ul>
+            </div>
+            <div class="footer-list">
+              <span class="footer-list-title">Connect</span>
+                <ul>
+                  <li>Content</li>
+                  <li>Newspaper</li>
+                  <li>LinkedIn</li>
+                </ul>
+            </div>
+        </div>
+          <div class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor.</a><br class="mobile-show">
+          Coded by <a href="#">Swan Yee Tun.</a>
+        </div>
+    </div>
+  </footer>
+ 
+  <script src="./app.js"></script>
+</body>
+</html>
